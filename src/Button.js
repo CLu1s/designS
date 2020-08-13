@@ -144,6 +144,7 @@ const StyledButton = styled.button`
   ${(props) =>
     props.containsIcon &&
     `
+    border-radius: 100px;
       svg {
         display: block;
         margin: 0;

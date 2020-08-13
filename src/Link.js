@@ -11,17 +11,17 @@ const linkStyles = css`
   transition: transform 150ms ease-out, color 150ms ease-out;
   text-decoration: none;
 
-  color: ${color.secondary};
+  color: ${color.primary};
 
   &:hover,
   &:focus {
     cursor: pointer;
     transform: translateY(-1px);
-    color: ${darken(0.07, color.secondary)};
+    color: ${darken(0.07, color.primary)};
   }
   &:active {
     transform: translateY(0);
-    color: ${darken(0.1, color.secondary)};
+    color: ${darken(0.1, color.primary)};
   }
 
   svg {
@@ -48,7 +48,7 @@ const linkStyles = css`
     `};
 
   ${props =>
-    props.secondary &&
+    props.primary &&
     css`
       color: ${color.mediumdark};
 
@@ -147,7 +147,7 @@ const LinkButton = styled.button`
 const applyStyle = LinkWrapper => {
   return (
     LinkWrapper &&
-    styled(({ containsIcon, inverse, nochrome, secondary, tertiary, ...linkWrapperRest }) => (
+    styled(({ containsIcon, inverse, nochrome, primary, tertiary, ...linkWrapperRest }) => (
       <LinkWrapper {...linkWrapperRest} />
     ))`
       ${linkStyles};
@@ -188,7 +188,7 @@ Link.propTypes = {
   LinkWrapper: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
   inverse: PropTypes.bool,
   nochrome: PropTypes.bool,
-  secondary: PropTypes.bool,
+  primary: PropTypes.bool,
   tertiary: PropTypes.bool,
 };
 
@@ -200,6 +200,6 @@ Link.defaultProps = {
   LinkWrapper: undefined,
   inverse: false,
   nochrome: false,
-  secondary: false,
+  primary: false,
   tertiary: false,
 };
