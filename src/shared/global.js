@@ -1,7 +1,7 @@
 import { createGlobalStyle, css } from 'styled-components';
 import { color, typography } from './styles';
 
-export const fontUrl = 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800,900';
+export const fontUrl = 'https://fonts.googleapis.com/css?family=Roboto:400,700,800,900';
 
 export const bodyStyles = css`
   font-family: ${typography.type.primary};
@@ -114,7 +114,7 @@ export const bodyStyles = css`
 `;
 
 export const GlobalStyle = createGlobalStyle`
-  /* @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800,900'); */
+  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,800,900');
 
   body {
     ${bodyStyles}

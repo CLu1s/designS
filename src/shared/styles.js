@@ -11,9 +11,9 @@ export const background = {
 
 export const color = {
   // Palette
-  primary: '#FF4785', // coral
-  secondary: '#1EA7FD', // ocean
-  tertiary: '#DDDDDD',
+  primary: '#007BC1', // coral
+  secondary: '#FFB803', // ocean
+  tertiary: '#EFF2F4',
 
   orange: '#FC521F',
   gold: '#FFAE00',
@@ -21,6 +21,7 @@ export const color = {
   seafoam: '#37D5D3',
   purple: '#6F2CAC',
   ultraviolet: '#2A0481',
+  blue: '#1674C0',
 
   // Monochrome
   lightest: '#FFFFFF',
@@ -29,7 +30,7 @@ export const color = {
   mediumlight: '#EEEEEE',
   medium: '#DDDDDD',
   mediumdark: '#999999',
-  dark: '#666666',
+  dark: '#242526',
   darker: '#444444',
   darkest: '#333333',
 
@@ -55,7 +56,7 @@ export const spacing = {
 
 export const typography = {
   type: {
-    primary: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+    primary: 'Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif',
     code: '"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace',
   },
   weight: {
